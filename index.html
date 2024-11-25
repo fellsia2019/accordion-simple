@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *, html, body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        scrollbar-width: none;
+    }
+    body {
+        background-color: #191919;
+    }
+    html::-webkit-scrollbar-button {
+        background-image: none;
+        background-repeat: no-repeat;
+        width: 0;
+        height: 0;
+    }
+    html::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    html::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        background-color: transparent;
+    }
+    html::-webkit-resizer {
+        background-image: none;
+        background-repeat: no-repeat;
+        width: 0;
+        height: 0;
+    }
+    html::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .container {
+        margin: 50px auto;
+        max-width: 800px;
+        background-color: aliceblue;
+        padding: 40px;
+    }
+    .acc__head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        padding: 5px 24px;
+        border-radius: 24px;
+        border: 2px solid blueviolet;
+        color: blueviolet;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .acc__body {
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        padding: 0 24px;
+        transition: all 0.3s ease;
+        will-change: grid-template-rows;
+        border: 2px solid transparent;
+        border-radius: 24px;
+    }
+    .acc__body-inner {
+        min-height: 0;
+    }
+    .acc.open .acc__body {
+        padding: 24px;
+        grid-template-rows: 1fr;
+        border-color: blueviolet;
+        margin-top: 10px;
+    }
+ </style>
+<body>
+    <div class="container">
+        <div class="acc">
+            <div class="acc__head">
+                простой аккордеон
+            </div>
+            <div class="acc__body">
+                <div class="acc__body-inner">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis unde ex neque facere saepe illo, dolorem dicta distinctio laudantium debitis exercitationem! Eveniet vitae incidunt suscipit officia ipsa. Sed nostrum voluptatibus fugit omnis ipsam et odio aliquid, sequi nihil dicta sint maiores odit minus fuga quas tenetur labore quod pariatur dolorum eaque culpa quasi vero cum neque? Accusamus repellendus, illo sed fugiat neque aliquid perferendis asperiores deleniti distinctio exercitationem saepe iure iste voluptatem. Porro laudantium vel eveniet culpa, cupiditate voluptatibus mollitia, eaque, veritatis corporis voluptatum minima cum voluptate placeat sunt saepe ex consequuntur? Magni nemo delectus distinctio quisquam mollitia illo totam fuga inventore deleniti excepturi eos itaque porro doloremque, sed facere autem aliquid rerum asperiores ab eligendi. Sequi eum aut unde aliquid animi autem assumenda ipsam fuga quibusdam! Corrupti asperiores in, labore error dignissimos commodi, doloribus eius ex sit facere harum suscipit deleniti magnam velit culpa officiis natus ratione vel est officia accusantium nam minus. Cumque, inventore incidunt. Laudantium mollitia vitae ducimus doloremque aspernatur enim corrupti dolore eum nesciunt, nam doloribus maxime impedit reprehenderit architecto ipsa optio pariatur est perspiciatis consectetur inventore sint ratione. Totam, soluta facilis eveniet quos amet veritatis aperiam assumenda! Eligendi, odit. Ratione nulla, illo repellendus quis quidem error necessitatibus veritatis minus quaerat, sit dolor modi recusandae magni sed asperiores pariatur quo ex adipisci a voluptate. In molestias delectus voluptate quis magni, aperiam suscipit hic recusandae fugiat totam dignissimos? Enim, dicta explicabo? Nulla, maiores velit! Ea accusantium quam corporis delectus voluptatibus molestiae ipsum id fugit consectetur velit perferendis facere placeat architecto quia rerum consequuntur ducimus, deserunt assumenda? Blanditiis, numquam excepturi! Nemo mollitia iste maiores facilis? Assumenda nesciunt eveniet nulla nostrum possimus maxime ex. Sit, impedit doloribus! Corrupti quam tempora voluptatum atque facere earum laborum dolores quidem quo, ex voluptatibus alias, ad nostrum blanditiis quis, culpa nesciunt. Recusandae nulla cumque, vero consectetur voluptatum neque illum? Totam atque beatae eaque quas in temporibus exercitationem voluptatum qui pariatur repudiandae quaerat a unde aperiam excepturi quae illum ducimus facere, sunt omnis labore! Blanditiis amet natus placeat, expedita illo, distinctio nobis accusantium architecto vero consequuntur perferendis similique odit asperiores necessitatibus dolore excepturi eligendi enim sunt? Tenetur dolor facere quisquam quo. Cupiditate, odio velit aliquam impedit aut id atque officia nesciunt ipsa eaque quisquam dignissimos iusto culpa quidem molestias consequuntur nostrum quis dolore quod pariatur laudantium magni debitis recusandae qui! Consequuntur architecto porro dolorem consectetur provident autem delectus velit aut quibusdam, omnis voluptatibus, debitis esse. Magnam, sint doloremque! Laborum enim beatae iure at, provident impedit dicta atque harum iusto dolores, deleniti sunt reprehenderit explicabo obcaecati. Omnis blanditiis itaque similique quis sequi, beatae neque magnam distinctio unde, eaque praesentium enim deleniti, nostrum amet eveniet! Magnam alias aperiam ipsum cupiditate adipisci molestias dolorem vel modi facere repellendus! Est, id! Totam, earum veritatis! Magnam saepe voluptas, quam tempore sunt nisi quos neque alias voluptatem facere quia aperiam. Cupiditate rem, ea maxime in ducimus consequatur minus labore debitis, perspiciatis veritatis reiciendis, placeat asperiores necessitatibus nam? Maiores a obcaecati dolor optio inventore consequuntur ipsa perferendis autem rem, unde porro minima! Odio perferendis, ullam consectetur facere reiciendis expedita temporibus. Alias minima dolorum corrupti, saepe laudantium, consectetur velit voluptate blanditiis natus vitae tempore, omnis maiores distinctio labore? Beatae at sunt praesentium corporis eos explicabo voluptatibus, debitis excepturi, quia architecto, esse ipsa delectus optio nulla possimus consequatur exercitationem porro voluptas minima? Unde blanditiis quaerat, earum quae tenetur in ab hic quia ex aut non, perferendis iste! Eaque reiciendis quibusdam corporis voluptatum iusto deleniti iure, excepturi tenetur, accusamus saepe necessitatibus esse! Error aperiam atque sequi, quia possimus provident labore rem doloremque aspernatur, quam repellendus amet iusto tempore, corrupti quaerat dolorem numquam tenetur cupiditate sunt dolorum aliquid facilis totam. Voluptates minima sit, odio est itaque, officiis necessitatibus doloremque tenetur impedit in illum eligendi temporibus, ut quos! Excepturi dolorem vitae saepe magni repellat, labore sapiente temporibus ducimus deserunt impedit delectus, ipsa ipsam. Assumenda, vitae sunt suscipit voluptatum tempore praesentium ad doloribus autem eius ullam tenetur consectetur veritatis doloremque impedit repellendus iste quis unde delectus, dicta maxime nulla eum voluptas similique quo! Minima rem nam, exercitationem saepe qui minus optio natus repudiandae, fugit assumenda tenetur eum eaque non! Tempora saepe expedita voluptates, consequuntur omnis quasi numquam fuga magnam! Incidunt, ea impedit enim dolore repellendus alias officiis natus non? Numquam iusto incidunt harum alias. Suscipit doloremque placeat voluptas beatae iure, assumenda cum laboriosam quisquam vel tempore voluptatum voluptatibus possimus harum, porro provident officiis pariatur eveniet? Architecto enim odit quidem harum? Velit cupiditate expedita placeat! Esse nostrum deserunt praesentium. Cumque fugit, praesentium, ea labore obcaecati ipsa, corrupti qui quam minus reprehenderit incidunt iste sit? Asperiores, consequatur facere veniam maiores voluptate perspiciatis deleniti. Consequuntur ut velit eos doloribus, quam, odit libero eligendi aspernatur perferendis repellat ducimus reprehenderit adipisci esse consequatur repudiandae nesciunt aliquam amet pariatur ab non quibusdam! Incidunt quod sequi illo consequatur quia totam, ullam laboriosam nobis, provident ut doloremque eos, natus nemo vitae cupiditate? Ipsa explicabo, odio nostrum veniam nisi aperiam eveniet aliquam quidem quod accusamus sint quos porro? Sequi fugit nobis eos, sint vero laboriosam molestias optio nulla neque, rerum blanditiis deserunt eius quam eligendi corporis consequatur, eum sunt error qui pariatur consectetur ad atque facilis dolorum. Non rerum omnis amet deleniti suscipit architecto at, delectus quae adipisci velit nihil ex soluta magni maiores aliquid veritatis, ullam eaque rem deserunt commodi nisi sapiente unde doloremque. Odio, quaerat ipsam! Aspernatur adipisci, mollitia iure obcaecati at suscipit asperiores neque eius velit id doloribus sapiente, ea perferendis sint quasi nostrum exercitationem dolorem beatae libero. Sequi eum veniam quidem veritatis fugit voluptatum deleniti praesentium, aperiam error quia consectetur debitis ipsum rerum aliquid natus molestias cumque nisi. Corporis nesciunt molestiae iure cum nostrum vitae a repellat quisquam praesentium! Ab totam optio suscipit ea vel veniam nihil excepturi perferendis consectetur aliquam dolore deserunt asperiores officiis ullam illo velit, expedita modi fugiat debitis sequi exercitationem, esse ducimus rerum vero! Natus nesciunt vel culpa laboriosam voluptate, eligendi ab atque odio hic explicabo et illum! Rem deleniti accusamus eos iure quis beatae iusto perspiciatis est, facilis corrupti consequatur corporis quos obcaecati! Ipsam id iure praesentium?
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.body.querySelector('.acc__head').addEventListener('click', (e) => {
+            e.currentTarget.closest('.acc').classList.toggle('open')
+        })
+    })
+</script>
+</html>
